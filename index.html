@@ -1,148 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Hawan Ceremony Invitation</title>
+    <title>House Hawan Invitation</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Devanagari&display=swap');
-        
         body {
-            font-family: 'Poppins', sans-serif;
+            background-color: #f8e8c8;
             text-align: center;
-            background: linear-gradient(to bottom, #ff9933, #ffd700);
-            margin: 0;
-            padding: 0;
-            color: #5a3e0c;
+            font-family: 'Arial', sans-serif;
         }
-
         .container {
             max-width: 600px;
-            margin: 50px auto;
-            padding: 40px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            border: 5px solid #d4a017;
-            position: relative;
-            overflow: hidden;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff3d4;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
-
         h1 {
-            color: #b76e00;
-            font-family: 'Noto Sans Devanagari', sans-serif;
-            font-size: 32px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
+            color: #b36b00;
         }
-
+        .swastik {
+            width: 80px;
+            height: auto;
+        }
+        .quote {
+            font-style: italic;
+            font-size: 18px;
+            color: #444;
+            margin: 10px 0;
+        }
         .details {
             font-size: 20px;
+            color: #8a4b08;
             margin: 20px 0;
-            color: #5a3e0c;
-            font-weight: 600;
         }
-
-        .rsvp-button {
-            display: inline-block;
-            background: #b76e00;
+        .flowers {
+            width: 100px;
+            height: auto;
+        }
+        .button {
+            background-color: #b36b00;
             color: white;
-            padding: 12px 25px;
-            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
             font-size: 18px;
-            font-weight: bold;
-            transition: background 0.3s, transform 0.3s;
         }
-
-        .rsvp-button:hover {
-            background: #8a5400;
-            transform: scale(1.05);
-        }
-
-        .symbol {
-            width: 120px;
-            margin-top: 20px;
-            animation: fadeIn 2s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .decorative-border {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://www.transparenttextures.com/patterns/golden-brown.png');
-            opacity: 0.2;
-        }
-
-        .glow {
-            color: #b76e00;
-            text-shadow: 0 0 10px #ffb84d, 0 0 20px #ffb84d, 0 0 30px #ffb84d, 0 0 40px #ffb84d;
-            animation: glow 1.5s infinite alternate;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 10px #ffb84d; }
-            to { text-shadow: 0 0 30px #ffb84d, 0 0 50px #ffb84d; }
-        }
-
-        .hawan-animation {
-            width: 80px;
-            height: 120px;
-            margin-top: 20px;
-            background: url('https://www.example.com/hawan-flame.gif') no-repeat center center;
-            background-size: contain;
-            animation: flame 1.5s infinite alternate;
-        }
-
-        @keyframes flame {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.1);
-                opacity: 0.8;
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-        .responsive {
-            @media (max-width: 768px) {
-                .container {
-                    padding: 30px;
-                }
-                h1 {
-                    font-size: 28px;
-                }
-            }
-        }
-
     </style>
+    <script>
+        function showMessage() {
+            alert("आपके आने से हवन का शुभ अवसर और मंगलमय हो जाएगा!");
+        }
+    </script>
 </head>
 <body>
     <div class="container">
-        <div class="decorative-border"></div>
-        <img src="Om_symbol.svg.png" alt="Om Symbol" class="symbol">
-        <h1 class="glow">ॐ गृह हवन समारोह ॐ</h1>
-        <p class="details">भगवान की कृपा से, <br>
-        <strong>जेपी शर्मा</strong> आपको गृह हवन समारोह में सादर आमंत्रित करते हैं।</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/HinduSwastika.svg/1200px-HinduSwastika.svg.png" class="swastik" alt="Swastik">
+        <h1>आपका सादर आमंत्रण</h1>
+        <p class="quote">"धर्म ही जीवन का आधार है, सत्कर्म ही सच्ची पूजा है।"</p>
         <p class="details">
-        <strong>तारीख:</strong> शनिवार, 6 अप्रैल 2025 <br>
-        <strong>समय:</strong> प्रातः 10:00 बजे <br>
-        <strong>स्थान:</strong> जट्टारी</p>
-        <div class="hawan-animation"></div>
-        <a href="#" class="rsvp-button">आगमन की पुष्टि करें</a>
+            श्री जे. पी. शर्मा एवं श्रीमती प्रीति शर्मा <br>
+            सादर आमंत्रण देते हैं <br>
+            हवन समारंभ में <br>
+            दिनांक: 6 अप्रैल <br>
+            स्थान: कृष्णा विहार कॉलोनी, जट्टारी
+        </p>
+        <img src="https://www.freepnglogos.com/uploads/flower-png/flower-transparent-background-40.png" class="flowers" alt="Flowers">
+        <br><br>
+        <button class="button" onclick="showMessage()">हम आ रहे हैं!</button>
     </div>
 </body>
 </html>

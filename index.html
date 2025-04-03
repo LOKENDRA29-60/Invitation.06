@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Hawan Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8e8c8;
+            text-align: center;
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            background-color: #fff3d4;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            border: 5px solid #b36b00;
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        h1 {
+            color: #b36b00;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Sacramento', cursive;
+            text-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+            animation: glow 2s infinite alternate;
+        }
+        h2 {
+            font-size: 35px;
+            color: #8a4b08;
+            font-family: 'Great Vibes', cursive;
+        }
+        .details {
+            font-size: 22px;
+            color: #8a4b08;
+            font-weight: bold;
+        }
+        .event-box {
+            background-color: #ffdab9;
+            padding: 20px;
+            border-radius: 10px;
+            border: 3px solid #b36b00;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            width: 80%;
+        }
+        .button {
+            background-color: #b36b00;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #914c00;
+            transform: scale(1.1);
+        }
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: auto;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            from { transform: translateY(-100px); opacity: 1; }
+            to { transform: translateY(100vh); opacity: 0; }
+        }
+        .flower-1 {
+            left: 10%;
+            animation-duration: 6s;
+        }
+        .flower-2 {
+            left: 30%;
+            animation-duration: 5s;
+        }
+        .flower-3 {
+            left: 50%;
+            animation-duration: 7s;
+        }
+        .flower-4 {
+            left: 70%;
+            animation-duration: 6.5s;
+        }
+        .flower-5 {
+            left: 90%;
+            animation-duration: 6s;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("Your presence will make this auspicious occasion even more special and divine!");
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            for (let i = 0; i < 20; i++) {
+                let flower = document.createElement("img");
+                flower.src = "https://www.freepnglogos.com/uploads/flower-png/flower-transparent-background-40.png";
+                flower.className = "flower flower-" + (i % 5 + 1);
+                flower.style.animationDuration = (Math.random() * 5 + 4) + "s";
+                document.body.appendChild(flower);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Hawan Invitation 🌸</h1>
+        <h2>With immense joy, we invite you and your family</h2>
+        <p class="details">
+            Please grace us with your presence at our auspicious<br>
+            Hawan ceremony and bless the occasion.
+        </p>
+        <div class="event-box">
+            <h2>Event Details</h2>
+            <p class="details">
+                <strong>Hosts:</strong> Mr. J.P. Sharma & Mrs. Priti Sharma <br>
+                <strong>Date:</strong> April 6th <br>
+                <strong>Venue:</strong> Krishna Vihar Colony, Jattari
+            </p>
+        </div>
+        <br><br>
+        <button class="button" onclick="showMessage()">We Are Coming!</button>
+    </div>
+</body>
+</html>

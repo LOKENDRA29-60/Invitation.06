@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Hawan Invitation</title>
+    <style>
+        body {
+            background-color: #f8e8c8;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            background-color: #fff3d4;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            border: 5px solid #b36b00;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        h1 {
+            color: #b36b00;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .swastik {
+            width: 100px;
+            height: auto;
+            animation: rotate 4s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .details {
+            font-size: 22px;
+            color: #8a4b08;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .flowers {
+            width: 120px;
+            height: auto;
+            margin-top: 20px;
+            animation: fadeInUp 2s;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .button {
+            background-color: #b36b00;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #914c00;
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function showMessage() {
+            alert("आपके आगमन से यह पावन अवसर और भी शुभ और मंगलमय होगा!");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/HinduSwastika.svg/1200px-HinduSwastika.svg.png" class="swastik" alt="Swastik">
+        <h1>🌸 सादर आमंत्रण 🌸</h1>
+        <p class="details">
+            हम हर्ष के साथ आपको एवं आपके परिवार को <br>
+            हमारे शुभ हवन समारोह में आमंत्रित करते हैं। <br>
+            कृपया इस पावन अवसर पर पधारकर <br>
+            अपने आशीर्वाद से हमें कृतार्थ करें।
+        </p>
+        <p class="details">
+            <strong>आयोजक:</strong> श्री जे. पी. शर्मा एवं श्रीमती प्रीति शर्मा <br>
+            <strong>दिनांक:</strong> 6 अप्रैल <br>
+            <strong>स्थान:</strong> कृष्णा विहार कॉलोनी, जट्टारी
+        </p>
+        <img src="https://www.freepnglogos.com/uploads/flower-png/flower-transparent-background-40.png" class="flowers" alt="Flowers">
+        <br><br>
+        <button class="button" onclick="showMessage()">हम आ रहे हैं!</button>
+    </div>
+</body>
+</html>
